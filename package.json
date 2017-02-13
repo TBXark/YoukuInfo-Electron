@@ -1,0 +1,20 @@
+{
+  "name": "YoukuInfo",
+  "version": "1.0.0",
+  "description": "A minimal YoukuInfo application by Electron",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "package": "asar pack YoukuInfo-darwin-x64/YoukuInfo.app/Contents/Resources/app MyApp-darwin-x64/MyApp.app/Contents/Resources/app.asar",
+    "build": "electron-packager .  --overwrite --platform=darwin --arch=x64  --out=out --osx-sign.identity='com.TBXark.Youku'"
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "keywords": [
+    "Youku"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^1.4.1"
+  }
+}
